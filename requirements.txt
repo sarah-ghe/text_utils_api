@@ -1,11 +1,7 @@
 fastapi==0.111.0
-uvicorn==0.22.0
+uvicorn==0.29.0
 transformers==4.40.1
-torch==2.0.1
+torch==2.2.2
+blobfile==2.1.1
+tiktoken==0.6.0
 sentencepiece==0.1.99
-keybert==0.7.0
-scikit-learn==1.2.2
-numpy==1.25.2
-scipy==1.11.1
-spacy==3.5.3
-
