@@ -1,8 +1,8 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List
 
 class TextRequest(BaseModel):
-    text: str
+    text: str = Field(..., min_length=1, description="Text to analyze")
 
 class SummaryResponse(BaseModel):
     summary: str
