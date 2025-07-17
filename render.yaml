@@ -3,8 +3,11 @@ services:
     name: text-utils-api
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install --prefer-binary -r requirements.txt"
     startCommand: "uvicorn app.main:app --host 0.0.0.0 --port 10000"
     envVars:
       - key: PORT
         value: 10000
+    build:
+      environment:
+        python_version: 3.11
