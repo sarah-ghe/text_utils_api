@@ -1,5 +1,4 @@
-# Precompiled binary to avoid Rust build issues on Render
-tokenizers==0.19.1 --only-binary=:all:
+tokenizers==0.20.2 --only-binary=:all:
 
 fastapi==0.111.0
 uvicorn==0.29.0
@@ -8,3 +7,4 @@ torch==2.5.1
 blobfile==2.1.1
 tiktoken==0.6.0
 sentencepiece==0.1.99
+
