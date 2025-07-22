@@ -10,8 +10,8 @@ from app import services
 
 router = APIRouter()
 
-MAX_LENGTH = 3000  # Limit text length to prevent memory issues
-MIN_LENGTH = 3     # Ignore text that is too short to process
+MAX_LENGTH = 3000
+MIN_LENGTH = 3 
 
 
 def validate_text(text: str):

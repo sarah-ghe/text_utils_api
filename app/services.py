@@ -2,7 +2,7 @@ from transformers import pipeline, Pipeline
 from keybert import KeyBERT
 from typing import Tuple, List
 
-# Lazy-loaded models as singletons
+
 _summarizer: Pipeline = None
 _sentiment_analyzer: Pipeline = None
 _paraphraser: Pipeline = None
